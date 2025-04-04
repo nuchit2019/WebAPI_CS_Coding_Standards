@@ -1,10 +1,11 @@
-ได้เลย! ด้านล่างนี้คือ **C# Coding Standards สำหรับการพัฒนา .NET 8 Web API** แบบขยายความละเอียดพิเศษ พร้อม **ตัวอย่างโค้ดเต็มรูปแบบ** ครอบคลุมทุกหัวข้อ เพื่อใช้เป็นแนวทางมาตรฐานกลางในทีมพัฒนา หรือใช้เป็นเอกสารอ้างอิงในการทำ Code Review หรือสร้าง Coding Guideline ภายในองค์กรได้เลยครับ
+**C# Coding Standards สำหรับการพัฒนา .NET 8 Web API** 
 
----
+เอกสารอ้างอิงในการทำ Code Review หรือสร้าง Coding Guideline ภายในองค์กร
 
+#
 ## 🧠 **C# Coding Standards สำหรับพัฒนา .NET 8 Web API (เวอร์ชันขยาย)**
 
----
+#
 
 ### ✅ **1. Naming Conventions (มาตรฐานการตั้งชื่อ)**
 
@@ -34,7 +35,7 @@ public class ProductService : IProductService
 }
 ```
 
----
+#
 
 ### ✅ **2. Solution & Project Structure (โครงสร้างโปรเจกต์)**
 
@@ -51,7 +52,7 @@ ProductManagement/
     └── ProductManagement.Tests             ← Unit Tests
 ```
 
----
+#
 
 ### ✅ **3. API Controller Standards (มาตรฐานการเขียน Controller)**
 
@@ -98,7 +99,7 @@ public class ProductsController : ControllerBase
 }
 ```
 
----
+#
 
 ### ✅ **4. Exception Handling (การจัดการข้อผิดพลาด)**
 
@@ -135,7 +136,7 @@ public class ExceptionHandlingMiddleware
 }
 ```
 
----
+#
 
 ### ✅ **5. Logging Standards (มาตรฐานการ Log)**
 
@@ -150,7 +151,7 @@ _logger.LogWarning("Product with ID {ProductId} not found", productId);
 _logger.LogError(ex, "Error occurred while getting product: {ProductId}", productId);
 ```
 
----
+#
 
 ### ✅ **6. Dependency Injection (DI)**
 
@@ -180,7 +181,7 @@ public async Task<List<Product>> GetAllAsync()
 }
 ```
 
----
+#
 
 ### ✅ **8. Clean Method Design**
 
@@ -205,7 +206,7 @@ private decimal ApplyDiscount(decimal price, decimal discount)
 }
 ```
 
----
+#
 
 ### ✅ **9. Unit Testing**
 
@@ -232,7 +233,7 @@ public async Task GetByIdAsync_WithValidId_ReturnsProduct()
 }
 ```
 
----
+#
 
 ### ✅ **10. Security Standards**
 
@@ -254,7 +255,7 @@ public async Task<IActionResult> Create([FromBody] CreateProductRequest request)
 }
 ```
 
----
+#
 
 ### ✅ **11. Dapper/EF Core Standards**
 
@@ -272,7 +273,7 @@ public async Task<ProductDto> GetByIdAsync(int id)
 }
 ```
 
----
+#
 
 ### ✅ **12. Code Style & Clean Code**
 
@@ -289,7 +290,7 @@ if (order.Status == OrderStatus.Pending)
 }
 ```
 
----
+#
 
 ## ✨ สรุป Checklist สำหรับทีมพัฒนา
 
@@ -304,6 +305,4 @@ if (order.Status == OrderStatus.Pending)
 ✅ แยก Entity/DTO อย่างชัดเจน  
 ✅ เขียนโค้ดให้คนอ่านง่ายกว่าคอมพิวเตอร์
 
----
-
-หากต้องการไฟล์ PDF, Markdown หรือ Slide เพื่อนำเสนอทีม หรือใช้ในการ Code Review ก็บอกได้เลยนะครับ เดี๋ยวจัดให้ครบชุด! 😎
+#
