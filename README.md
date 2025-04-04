@@ -39,7 +39,7 @@ public class ProductService : IProductService
 
 ### ✅ **2. Solution & Project Structure (โครงสร้างโปรเจกต์)**
 
-เพื่อให้สอดคล้องกับหลักการ Clean Architecture:
+ใช้ Clean Architecture หรืออย่างน้อยแยก Layer ชัดเจน (Controller, Service, Repository):
 
 ```
 ProductManagement/
