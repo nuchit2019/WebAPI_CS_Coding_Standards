@@ -182,5 +182,4 @@ return new ApiOkResult(product, "Product fetched successfully");
 ✅ แยก `ModelState` Error ให้ชัดเจน พร้อม Field ชี้ชัดเจน
 
 ---
-
-ถ้าต้องการให้จัดทำเป็น **Library Class ช่วย Wrap Response**, หรือสร้าง Middleware ที่บังคับใช้มาตรฐานนี้ทั่วระบบ บอกได้เลยครับ เดี๋ยวจัดให้เต็มระบบ 💪
+💪
